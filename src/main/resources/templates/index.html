@@ -152,9 +152,10 @@
 	</td>
 	<td class="text-center"> 
 		<div class="m-btn-group m-btn-group--pill btn-group mr-2" role="group" aria-label="...">
+                                                                        <a data-th-href="@{/sub/(itemIndex=${cart.getItems().indexOf(item)})}">
 																		<button type="button"
                                                                                 class="m-btn btn btn-default"><i
-                                                                                class="fa fa-minus"></i></button>
+                                                                                class="fa fa-minus"></i></button></a>
 																		<button type="button"
                                                                                 class="m-btn btn btn-default"
                                                                                 disabled><span th:text="${item.quantity}"></span></button>
